@@ -1,7 +1,11 @@
 
+first runn this part in your mobile in order to ON your mobile's sensor
 m = mobiledev;
 m.AccelerationSensorEnabled = 1;
 m.Logging = 1;
+
+then walk and run this code
+
 m.Logging = 0;
 [a,t] = accellog(m);
 plot(t,a);
